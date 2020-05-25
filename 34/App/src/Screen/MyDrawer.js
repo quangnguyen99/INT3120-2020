@@ -41,11 +41,7 @@ export function OverrideDrawer(props) {
           onPress = {()=>{props.navigation.navigate('List')} }
           icon = {(props)=> <Icon name="star" size={25} color={'orange'} /> }
         />
-        <DrawerItem
-          label= {(props)=> <Text style={{ fontSize: 16}} >Cài đặt</Text> } 
-          onPress = {()=>{props.navigation.navigate('List')} }
-          icon = {(props)=> <Icon name="settings-outline" size={25} /> }
-        />
+        
       </DrawerContentScrollView>
   );
 }
