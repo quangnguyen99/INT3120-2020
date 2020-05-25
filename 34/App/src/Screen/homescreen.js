@@ -1,18 +1,13 @@
 import * as React from 'react';
-import { Button, View, Text, ScrollView } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { Icon } from 'react-native-elements'
-import Search from './Search'
+import {View, Text, ScrollView} from 'react-native';
+import {Icon} from 'react-native-elements';
+import Search from './Search';
 
-import { BorderlessButton } from 'react-native-gesture-handler';
-
-export default function HomeScreen({ navigation }) {
-
+export default function HomeScreen({navigation}) {
   return (
     <View>
       <View>
-        <Search/>
+        <Search />
       </View>
       <ScrollView>
         <View style={Styles.container}>
@@ -21,10 +16,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='search'
-                  type='material'
-                  color='#58D3F7'
+                  underlayColor="#E6E6E6"
+                  name="search"
+                  type="material"
+                  color="#58D3F7"
                   onPress={() => navigation.navigate('TimKiem')}
                   size={50}
                 />
@@ -35,10 +30,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='handshake-o'
-                  type='font-awesome'
-                  color='#0080FF'
+                  underlayColor="#E6E6E6"
+                  name="handshake-o"
+                  type="font-awesome"
+                  color="#0080FF"
                   onPress={() => navigation.navigate('ChaoHoi')}
                   size={50}
                 />
@@ -49,10 +44,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='map'
-                  type='font-awesome'
-                  color='#61210B'
+                  underlayColor="#E6E6E6"
+                  name="map"
+                  type="font-awesome"
+                  color="#61210B"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -63,10 +58,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='alarm'
-                  type='material'
-                  color='#424242'
+                  underlayColor="#E6E6E6"
+                  name="alarm"
+                  type="material"
+                  color="#424242"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -77,10 +72,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='motorcycle'
-                  type='font-awesome'
-                  color='#3B240B'
+                  underlayColor="#E6E6E6"
+                  name="motorcycle"
+                  type="font-awesome"
+                  color="#e6e600"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -91,10 +86,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='wechat'
-                  type='font-awesome'
-                  color='#0080FF'
+                  underlayColor="#E6E6E6"
+                  name="wechat"
+                  type="font-awesome"
+                  color="#0080FF"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -108,10 +103,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='ios-home'
-                  type='ionicon'
-                  color='#8A0808'
+                  underlayColor="#E6E6E6"
+                  name="ios-home"
+                  type="ionicon"
+                  color="rgb(230, 0, 0)"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -122,10 +117,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='game-controller'
-                  type='entypo'
-                  color='#0B2161'
+                  underlayColor="#E6E6E6"
+                  name="game-controller"
+                  type="entypo"
+                  color="#0B2161"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -136,10 +131,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='traffic'
-                  type='material'
-                  color='red'
+                  underlayColor="#E6E6E6"
+                  name="traffic"
+                  type="material"
+                  color="red"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -150,10 +145,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='smiley'
-                  type='octicon'
-                  color='#FF8000'
+                  underlayColor="#E6E6E6"
+                  name="smiley"
+                  type="octicon"
+                  color="#FF8000"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -164,10 +159,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='music'
-                  type='font-awesome'
-                  color='#210B61'
+                  underlayColor="#E6E6E6"
+                  name="music"
+                  type="font-awesome"
+                  color="#210B61"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -178,10 +173,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='film'
-                  type='font-awesome'
-                  color='#4C0B5F'
+                  underlayColor="#E6E6E6"
+                  name="film"
+                  type="font-awesome"
+                  color="#4C0B5F"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -195,10 +190,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='book'
-                  type='material'
-                  color='#01A9DB'
+                  underlayColor="#E6E6E6"
+                  name="book"
+                  type="material"
+                  color="#01A9DB"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -209,10 +204,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='map-pin'
-                  type='feather'
-                  color='red'
+                  underlayColor="#E6E6E6"
+                  name="map-pin"
+                  type="feather"
+                  color="red"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -223,10 +218,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='apple'
-                  type='font-awesome'
-                  color='#AEB404'
+                  underlayColor="#E6E6E6"
+                  name="apple"
+                  type="font-awesome"
+                  color="#AEB404"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -237,10 +232,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='soccer-ball-o'
-                  type='font-awesome'
-                  color='black'
+                  underlayColor="#E6E6E6"
+                  name="soccer-ball-o"
+                  type="font-awesome"
+                  color="black"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -251,10 +246,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='trees'
-                  type='foundation'
-                  color='#088A08'
+                  underlayColor="#E6E6E6"
+                  name="trees"
+                  type="foundation"
+                  color="#088A08"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -265,10 +260,10 @@ export default function HomeScreen({ navigation }) {
               <View style={Styles.itemConso}>
                 <Icon
                   //reverse='true' đảo màu nền
-                  underlayColor='#E6E6E6'
-                  name='baidu'
-                  type='entypo'
-                  color='#3B170B'
+                  underlayColor="#E6E6E6"
+                  name="baidu"
+                  type="entypo"
+                  color="black"
                   onPress={() => navigation.navigate('List')}
                   size={50}
                 />
@@ -276,46 +271,43 @@ export default function HomeScreen({ navigation }) {
               </View>
             </View>
           </View>
-
         </View>
       </ScrollView>
     </View>
   );
 }
 
-
 const Styles = {
   container: {
     flexDirection: 'row',
-    height: 810
+    height: 810,
   },
 
   element: {
     flexDirection: 'column',
     flex: 1,
-    height: "100%"
+    height: '100%',
   },
   item: {
-    width: "100%",
+    width: '100%',
     height: 125,
     backgroundColor: 'white',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 
   itemConso: {
-    width: "80%",
-    height: "80%",
+    width: '80%',
+    height: '80%',
     borderRadius: 0,
     backgroundColor: 'white',
     alignItems: 'center',
-    paddingTop: 20
+    paddingTop: 20,
   },
 
   buttonName: {
     marginTop: 7,
     fontSize: 14,
-    textAlign: "center"
-  }
+    textAlign: 'center',
+  },
 };
-
